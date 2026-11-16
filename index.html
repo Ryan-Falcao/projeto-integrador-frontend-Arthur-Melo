@@ -1,49 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conflito Russo-Ucrâniano</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <h1>Conflito Russo-Ucrâniano</h1>
-    <p>Website com o intuito de trazer informações sobre o conflito Russo-Ucrâniano.</p>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Início</a></li>
+            <li class="dropdown">
+                <a href="#">O Conflito ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Contexto histórico</a></li>
+                    <li><a href="#">Invasão de 2022</a></li>
+                    <li><a href="#">Consequências</a></li>
+                </ul>
+            </li>
+            <li><a href="https://en.wikipedia.org/wiki/Russia" target="_blank">Rússia</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Ukraine" target="_blank">Ucrânia</a></li>
+            <li><a href="#">Fontes</a></li>
+        </ul>
+    </nav>
 </header>
+<p>Website com o intuito de trazer informações sobre o conflito Russo-Ucrâniano.</p>
+
+<!--timeline com botões-->
+<div class="timeline">
+
+    <div class="years">
+        <input type="radio" name="year" id="y2022" checked>
+        <label for="y2022">2022</label>
+
+        <input type="radio" name="year" id="y2023">
+        <label for="y2023">2023</label>
+
+        <input type="radio" name="year" id="y2024">
+        <label for="y2024">2024</label>
+    </div>
+
+        <div class="content">
+            <div class="year y2022">
+                <section>
+                    <h2>Início do conflito de 2022</h2>
+                    <p>O conflito em larga escala começou em 24 de fevereiro de 2022, quando a Rússia lançou uma invasão da Ucrânia após meses de crescente tensão militar e diplomática. Nos meses anteriores, a Rússia havia concentrado tropas perto das fronteiras ucranianas e exigido, entre outras coisas, garantias de segurança relacionadas à expansão da OTAN e à situação da Ucrânia. Em 21 de fevereiro, Putin reconheceu como independentes as áreas separatistas de <a href="https://www.bbc.com/portuguese/internacional-60471555">Donetsk e Luhansk</a> e enviou tropas para essas regiões. Três dias depois, a Rússia iniciou uma ofensiva em larga escala contra a Ucrânia, atacando a partir de Belarus, da Rússia e da Crimeia.</p>
+                    <table border="1">
+                        <tr>
+                            <th>País</th>
+                            <th>Capital</th>
+                            <th><a href="https://databank.worldbank.org/reports.aspx?country=UKR&source=2&utm" target="_blank">População</a></th>
+                            <th><a href="https://databank.worldbank.org/reports.aspx?country=RUS%2CITA%2CESP&series=NY.GDP.MKTP.CD&source=2&utm" target="_blank">PIB</a></th>
+                            <th><a href="https://www.globalfirepower.com/global-ranks-previous.php" target="_blank">Ranking militar</a></th>
+                        </tr>
+                        <tr>
+                            <td>Rússia</td>
+                            <td>Moscou</td>
+                            <td>144 milhões</td>
+                            <td>US$ 2.29 T</td>
+                            <td>2º</td>
+                        </tr>
+                        <tr>
+                            <td>Ucrânia</td>
+                            <td>Kiev</td>
+                            <td>41 milhões</td>
+                            <td>US$ 161 B</td>
+                            <td>22º</td>
+                        </tr>
+                    </table>
+                    <ul>
+                        <li>Conflitos recentes</li>
+                        <li>Gravações de soldados</li>
+                        <li>Gravações de drones</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="year y2023">
+                <h2>2023 - A contraofensiva</h2>
+                <p>A Ucrânia inicia sua operação contraofensiva.</p>
+            </div>
+
+            <div class="year y2024">
+                <h2>2024 - Luta Contínua</h2>
+                <p>Luta contínua em toda a frente oriental ucrâniana.</p>
+            </div>
+        </div>
+
+</div>
 
 <main>
     <section>
-        <h2>Início do conflito de 2022</h2>
-        <p>O conflito em larga escala começou em 24 de fevereiro de 2022, quando a Rússia lançou uma invasão da Ucrânia após meses de crescente tensão militar e diplomática. Nos meses anteriores, a Rússia havia concentrado tropas perto das fronteiras ucranianas e exigido, entre outras coisas, garantias de segurança relacionadas à expansão da OTAN e à situação da Ucrânia. Em 21 de fevereiro, Putin reconheceu como independentes as áreas separatistas de <a href="https://www.bbc.com/portuguese/internacional-60471555">Donetsk e Luhansk</a> e enviou tropas para essas regiões. Três dias depois, a Rússia iniciou uma ofensiva em larga escala contra a Ucrânia, atacando a partir de Belarus, da Rússia e da Crimeia.</p>
-        <table border="1">
-            <tr>
-                <th>País</th>
-                <th>Capital</th>
-                <th><a href="https://databank.worldbank.org/reports.aspx?country=UKR&source=2&utm" target="_blank">População</a></th>
-                <th><a href="https://databank.worldbank.org/reports.aspx?country=RUS%2CITA%2CESP&series=NY.GDP.MKTP.CD&source=2&utm" target="_blank">PIB</a></th>
-                <th><a href="https://www.globalfirepower.com/global-ranks-previous.php" target="_blank">Ranking militar</a></th>
-            </tr>
-            <tr>
-                <td>Rússia</td>
-                <td>Moscou</td>
-                <td>144 milhões</td>
-                <td>US$ 2.29 T</td>
-                <td>2º</td>
-            </tr>
-            <tr>
-                <td>Ucrânia</td>
-                <td>Kiev</td>
-                <td>41 milhões</td>
-                <td>US$ 161 B</td>
-                <td>22º</td>
-            </tr>
-        </table>
-        <ul>
-            <li>Conflitos recentes</li>
-            <li>Gravações de soldados</li>
-            <li>Gravações de drones</li>
-        </ul>
+        <h2>Guerra na Ucrânia</h2>
+        <p>A guerra da Ucrânia, iniciada em fevereiro de 2022, completou quatro anos em 2026 e se consolidou como um conflito prolongado de alta intensidade e desgaste mútuo. A situação geral é marcada por uma frente de batalha praticamente estagnada, com a Rússia mantendo iniciativa limitada no leste, enquanto a Ucrânia resiste com apoio externo incerto. Paralelamente, as economias de ambos os países e da Europa sentem o peso da guerra, e as negociações diplomáticas avançam lentamente, sem perspectivas claras de paz no curto prazo.</p>
     </section>
 </main>
 
